@@ -1,0 +1,14 @@
+.main-container {
+    border:1px solid red;
+    height: 100%;
+}
+header {
+    border: 1px solid blue;
+    height: 50px;
+    background-color: blue;
+    text-align: right;
+    text-color:white
+}
+nav {
+    border: 1px solid green;
+}
