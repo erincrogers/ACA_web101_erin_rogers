@@ -1,14 +1,38 @@
 .main-container {
-    border:1px solid red;
-    height: 100%;
+    border:1px solid gray;
+    height: 120%;
+    background-color: rgb(139, 136, 136);
 }
 header {
     border: 1px solid blue;
     height: 50px;
     background-color: blue;
     text-align: right;
-    text-color:white
+    color:white
 }
 nav {
-    border: 1px solid green;
+    border: 1px solid darkgray;
+    background-color:white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align:right;
+}
+button {
+    background-color: orange;
+}
+ul> li {
+    display: inline-block;
+}
+main {
+    margin-left: 350;
+    margin-right:350;
+}
+section {
+    border: 1px solid gray;
+    padding-left: 20;
+    padding-right: 20;
+    background-color:white;
 }
