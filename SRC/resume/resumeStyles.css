@@ -1,0 +1,36 @@
+.container {
+    border:1px solid gray;
+    width: 80%;
+    margin-left: 120px;
+    padding: 20px;
+    Display:inline-block;
+}
+head>title {
+    float: left;
+    font-size: 50px;
+}
+article {
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center left;
+}
+.left_blocks {
+    width: 200px;
+    height: 600px;
+    float:left;
+}
+.right_blocks {
+    width: 600px;
+    height 600px;
+    float: right;
+}
+h3 {
+    padding: 10px;
+}
+li>p {
+    font-weight: bold;
+}
+ul {
+    padding:5px;
+    list-style-type: none;
+}
