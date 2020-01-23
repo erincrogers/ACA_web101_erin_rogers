@@ -14,7 +14,7 @@ article {
     text-align: center left;
 }
 .second_container {
-    display: inline-block;
+    display: block;
 }
 .left_blocks {
     width: 200px;
