@@ -13,7 +13,9 @@ header {
 nav {
     border: 1px solid darkgray;
     background-color:white;
+    font-size: 25px;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -22,6 +24,7 @@ ul {
 }
 button {
     background-color: orange;
+    font-size: 25px;
 }
 ul> li {
     display: inline-block;
