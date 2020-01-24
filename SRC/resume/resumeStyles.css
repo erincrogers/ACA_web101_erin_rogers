@@ -4,6 +4,7 @@
     margin-left: 120px;
     padding: 20px;
     Display:inline-block;
+    padding: 10px;
 }
 head>title {
     float: left;
@@ -13,6 +14,9 @@ article {
     border: 1px solid gray;
     padding: 10px;
     text-align: center left;
+}
+.second_container {
+    display: block;
 }
 .left_blocks {
     width: 200px;
@@ -34,3 +38,5 @@ ul {
     padding:5px;
     list-style-type: none;
 }
+}
+
