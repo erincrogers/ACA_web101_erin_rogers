@@ -1,0 +1,43 @@
+.container {
+    border:1px solid red;
+    height: 100%;
+    width: 25%
+    display: in-line block;
+}
+img {
+    height: 300px;
+    width: 600px;
+}
+ul {
+    border:1px solid blue;
+    padding: 0;
+}
+li {
+    border:1px solid black;
+    height: 100%;
+    width: 20px;
+    display: block;
+
+}
+button {
+    background: gray;
+}
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+}
+@media (min-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
+}
