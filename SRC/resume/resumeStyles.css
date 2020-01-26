@@ -3,6 +3,7 @@
     width: 80%;
     margin-left: 120px;
     padding: 10px;
+    display: inline-block;
 }
 head>title {
     float: left;
@@ -13,16 +14,13 @@ article {
     padding: 10px;
     text-align: center left;
 }
-.second_container {
-    display: block;
-}
 .left_blocks {
-    width: 200px;
+    width: 150px;
     height: 600px;
-    float:left;
+    float: left;
 }
 .right_blocks {
-    width: 600px;
+    width: 800px;
     height 600px;
     float: right;
 }
