@@ -7,25 +7,29 @@
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
     padding: 10%;
+    margin-left: 20px;
 }
 body {
-    margin: 0;
+    margin: 20px;
     width: 100%;
 }
 .to-dolist {
     border: 1px solid black;
-    background-color:red;
+    background-color: slategray;
     padding: 10px;
     grid-column: 1/3;
     grid-row: 1;
+    border-radius: 10px 10px 10px 10px;
     text-align: center;
+    font-size: large;
 }
 .calendar {
     border: 1px solid blue;
-    background-color: pink;
+    background-color:orange;
     padding: 10px;
     grid-column: 2/4;
     grid-row: 2;
+    border-radius: 10px 10px 10px 10px;
     text-align: center;
     display: grid;
     
@@ -40,16 +44,83 @@ body {
     grid-column: 7;
   }
 .clock {
-    border: 1px solid yellow;
-    background-color: orange;
     padding: 10px;
+    border-radius: 10px 10px 10px 10px;
     grid-column: 1 ;
     grid-row: 2;
 }
 .calculator {
-    border: 1px solid green;
-    background-color: yellow;
     padding: 10px;
     grid-template-columns: 3;
     grid-template-rows: 1/2;
 }
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+  }
+  .calculator-grid {
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 25% repeat(5, 1fr);
+  }
+  .calculator-grid {
+    border-radius: 10px 10px 10px 10px;
+  }
+  .calculator-grid .text-input {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    border-radius: 10px 10px 10px 10px;
+    background-color: lightskyblue;
+  }
+  .calculator-grid .calc-buttons {
+    border: 1px solid black;
+    background-color: lightslategrey;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .calculator-grid .top-row {
+  background-color: slategray;
+  }
+  .calculator-grid .calc-buttons-equal {
+    grid-column: 4/-1;
+    grid-row: 5/-1;
+    background-color: orange;
+  }
+  .calculator-grid .calc-buttons-plus {
+    grid-column: 4/-1;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slategray;
+  }
+  .calculator-grid .calc-buttons-minus {
+    grid-column: 4/-1;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:slategrey;
+  }
+  .calculator-grid .calc-buttons-zero {
+    grid-column: 1/3;
+    grid-row: 6;
+  }
+  .calc-buttons .calc-buttons-func {
+    background-color: darkslategray;
+  }
+  h4 {
+    text-align: left;
+  }
+
