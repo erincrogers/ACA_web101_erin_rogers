@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #4c4e4d;
+  background-color: #fcfdff;
+  font-family: 'Roboto Mono', monospace;
+}
+.border{
+  border:1px solid red;
+}
+.border2{
+  border:2px dotted blue;
+}
+.border3{
+  border:1px solid pink;
+}
+.border4{
+  border:1px solid black;
+}
+.wireframe {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.maxW_1024 {
+  /* border: 5px solid black; */
+  max-width: 1024px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+/* //// NAVIGATION ///// */
+.navigation {
+  width: 100%;
+  /* inherits the parent width */
+  max-width: inherit; 
+  height: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navigation__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation__content ul {
+  display:flex;
+}
+.navigation__content ul li {
+  padding: 0 1.4em 0 0;
+  font-size: 0.9em;
+}
+.navigation__content ul li a {
+  color: #4c4e4d;
+}
+.navigation__content ul li a:active {
+  color: #FF806F;
+  font-weight: 300;
+}
+.navigation__content ul li a:hover {
+  border-bottom: 2px solid #4c4e4d;
+  cursor: pointer;
+  color: #FF806F;
+}
+
+/* //// HERO ///// */
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./grayscaleMan.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__header h1 {
+  background-color: white;
+  color: black;
+  font-size: 64px;
+}
+.hero__header h3 {
+  background-color: black;
+  color: white;
+  font-size: 34px;
+}
+
+/* ///// SERVICES ////// */
+
+.services {
+  height: 500px;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.services__header{
+  text-align: center;
+}
+.services__container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.service {
+  width: 302px;
+  height:302px;
+}
+.service__body {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.service p{
+  font-size: 12px;
+}
+
+footer {
+  height: 80px;
+}
+.company {
+  display: flex;
+  flex-direction: row;
+}
+
+h5 {
+  padding: 40px;
+}
