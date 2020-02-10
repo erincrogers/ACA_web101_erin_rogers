@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,43 +16,43 @@ a {
 }
 
 body {
-  color: #4c4e4d;
-  background-color: #fcfdff;
-  font-family: 'Roboto Mono', monospace;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  min-width: 960px;
+  padding: 0;
+  
+}
+.logo {
+  display: block;
+  margin: 20 auto;
+  padding: 0;
+  width: 400px;
+  height: 100%;
 }
 .border{
-  border:1px solid red;
+  width: 100%;
 }
-.border2{
-  border:2px dotted blue;
-}
-.border3{
-  border:1px solid pink;
-}
+
 .border4{
-  border:1px solid black;
+  justify-content: center;
+  align-items: center;
 }
 .wireframe {
   height: auto;
   width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: stretch;
   align-items: center;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
 .maxW_1024 {
   /* border: 5px solid black; */
   max-width: 1024px;
-  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -61,22 +61,21 @@ body {
   position: relative;
 }
 /* //// NAVIGATION ///// */
-.navigation {
+#navigation {
   width: 100%;
   /* inherits the parent width */
   max-width: inherit; 
   height: 4em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .navigation__content {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
+  padding: 44px 0 50px;
+  text-align: center;
+  width: 960px;
 }
 .navigation__content ul {
   display:flex;
@@ -85,13 +84,8 @@ body {
   padding: 0 1.4em 0 0;
   font-size: 0.9em;
 }
-.navigation__content ul li a {
-  color: #4c4e4d;
-}
-.navigation__content ul li a:active {
-  color: #FF806F;
-  font-weight: 300;
-}
+
+
 .navigation__content ul li a:hover {
   border-bottom: 2px solid #4c4e4d;
   cursor: pointer;
@@ -100,12 +94,12 @@ body {
 
 /* //// HERO ///// */
 .hero {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   background-image: url("./grayscaleMan.jpg");
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -115,17 +109,41 @@ body {
 .hero__header {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.hero__header h1 {
+.hero__header h2 {
   background-color: white;
   color: black;
-  font-size: 64px;
+  display: inline-block;
+  font-family: 'Poller One', cursive;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0 0 18px;
+  padding: 23px 27px 20px;
+  text-transform: uppercase;
 }
-.hero__header h3 {
+.hero__header span {
   background-color: black;
   color: white;
-  font-size: 34px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 1;
+  font-size: 20px;
+  margin: 7px 0;
+  padding: 12px 27px;
+}
+.more {
+  width: 200px;
+  height: 100%;
+  background: #0ba39c;
+  color: #fff;
+  display:inline-block;
+  font-size: 16px;
+  margin: 15px 0 0;
+  padding: 26px 27px 22px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* ///// SERVICES ////// */
@@ -137,9 +155,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.services__header{
-  text-align: center;
-}
+
 .services__container {
   height: 100%;
   display: flex;
@@ -159,18 +175,47 @@ body {
   justify-content: center;
   align-items: center;
 }
-.service p{
-  font-size: 12px;
-}
+
 
 footer {
-  height: 80px;
-}
-.company {
+  height: 100px;
+  width: 100%;
+  background: #252525;
+  color: white;
+} 
+
+.footer-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  padding: 40px;
+  color: white;
 }
 
-h5 {
+h1 {
+  padding: 20px;
+  font-family: 'Poller One', cursive;
+  text-align: center;
+}
+.nav-link {
+  padding: 0 0 3px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+p {
+  color: white;
+  font-size: 17px;
   padding: 40px;
 }
+
+i {
+  font-size: 100px;
+  color: white;
+  padding: 10px;
+}
+
