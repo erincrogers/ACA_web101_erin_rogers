@@ -1,0 +1,67 @@
+body {
+  border: 1px solid red;
+  height: 100vh;
+}
+
+main {
+  border: 1px solid blue;
+  display: flex;
+  height: 100%;
+  margin: 10px;
+
+}
+
+.image {
+  max-width: 100vh;
+  height: auto;
+  border: 3px solid black;
+  display: flex;
+  position: sticky;
+  flex: 1;
+} 
+
+img {
+  height: 100%;
+  width: auto;
+  display: flex;
+}
+
+.right-box {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+nav {
+  border: 1px solid pink;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.write-up {
+  border: 1px solid yellow;
+}
+
+
+video {
+  position: relative;
+  height: 100vh;
+  
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+
+}
+
+li {
+  padding: 20px;
+}
