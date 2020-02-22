@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0 100px;
+  border: 1px solid blue;
+}
+.box {
+  height: 50px;
+  width: 50px;
+  margin: 70px;
+  
+}
+
+.main-container:hover .box:nth-child(odd) {
+  transform: scale(2) translate(200px,0) rotate(360deg);
+  transition: 3s;
+}
+
+.main-container:hover .box:nth-child(even) {
+  transform: scale(.5) translate(-200px,0) rotate(-360deg);
+  transition: 2s;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.salmon {
+  background-color: salmon;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.silver {
+  background-color: silver;
+}
+
+.fuchsia {
+  background-color: fuchsia;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: green;
+}
