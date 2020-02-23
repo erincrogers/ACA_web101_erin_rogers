@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: url(./cloudPoster.jpg);
+  background-size: cover;
+  font-family: 'Roboto Mono', monospace;
+}
+nav {
+  background: ghostwhite;
+  color: #344e63;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+li {
+  padding: 40px;
+}
+li:hover {
+  color: #6491b7;
+}
+.title {
+  margin-top: 100px;
+  color: #344e63;
+}
+
+.title h1 {
+  font-size: 42px;
+  line-height: 10px;
+}
+
+.title h2 {
+  font-size: 20px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+.form-control {
+width: 600px;
+background:rgba(255,255,255,0.5);
+border: none;
+outline: none;
+border-bottom: 1px solid #344e63;
+color: #344e63;
+font-size: 18px;
+margin-bottom: 16px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #344e63;
+  opacity: 1; /* Firefox */
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background-color: #344e63;
+  color: ghostwhite;
+  border-color: transparent;
+  font-size: 20px;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  transition: 0.4s ease;
+
+}
+
+form .submit:hover {
+  background-color: #6491b7;
+  cursor: pointer;
+}
+
+.main-container {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+  }
