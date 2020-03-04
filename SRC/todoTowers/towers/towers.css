@@ -1,0 +1,40 @@
+[data-stack] {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  -webkit-align-items: center;
+  display: -webkit-flex;
+  height: 101px;
+  background-color: cyan;
+  margin: 25px;
+}
+
+[data-block] {
+  width: 25px;
+  float: left;
+}
+
+[data-block="blue"] {
+  height: 25px;
+  background-color: cornflowerblue;
+}
+
+[data-block="green"] {
+  height: 50px;
+  background-color: #4CBA17;
+}
+
+[data-block="red"] {
+  height: 75px;
+  background-color: #FA7298;
+}
+
+[data-block="yellow"] {
+  height: 100px;
+  background-color: #F7DE27;
+}
+
+#announce-game-won {
+  font-size: 50px;
+  text-align: center;
+}
