@@ -1,0 +1,154 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Open Sans', ;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  z-index: 9999;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+li{
+  font-size: 1em;
+  padding: 40px;
+  color: ghostwhite;
+  font-family: 'Open Sans', ;
+  letter-spacing: 3px;
+  background-color: black;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+li:hover {
+  color: red;
+  transition-delay: 0.4s;
+}
+
+.ParallaxVideo{ 
+  height: 600px;
+  padding-bottom: 50px;
+  padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+  width: 100%;
+  position: fixed;
+  top:0;
+  z-index: -999;
+}
+/* .ParallaxVideo h1 {
+color: #fff;
+font-size: 76px;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+} */
+
+.jpg1, .jpg2, .jpg3 {
+  position: relative;
+  /* opacity: 0.70; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.jpg1 {
+  background-image: url(./imageFile/coffee1.jpg);
+  min-height: 400px;
+}
+.jpg2 {
+  background-image: url(./imageFile/coffee2.jpg);
+  min-height: 400px;
+}
+.jpg3 {
+  background-image: url(./imageFile/coffee3.jpg);
+  min-height: 600px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  text: #666;
+
+}
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+.banner {
+  font-size: 3em;
+  letter-spacing: 20px;
+}
+
+.articles {
+  font-size: 3vh;
+  background-color: transparent;
+  color: gray;
+  font-weight: semibold;
+}
+
+p {
+  font-size: 25px;
+}
+
+@media (max-width:576px) {
+  body {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jpg1, .jpg2, .jpg3 {
+    background-attachment: scroll;
+  }
+  span.border.responsive {
+    background-color: transparent;
+  }
+  .banner {
+    font-size: 4vh;
+  }
+  .ParallaxVideo video{ 
+    width: 100%;
+    position:relative;
+  }
+
+}
