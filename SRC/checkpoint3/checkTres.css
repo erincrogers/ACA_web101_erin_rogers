@@ -1,0 +1,38 @@
+.btn {
+  border-radius: 40px;
+  /* background: transparent; */
+  transition: all 0.3s ease 0s;
+}
+
+#engaged {
+  color:blue;
+}
+
+.jumbotron {
+  background: transparent;
+}
+
+
+
+.logo {
+  color: salmon;
+  padding: 5px;
+}
+
+.social {
+  font-size: 40px;
+  padding: 10px;
+}
+.video-graphic {
+  height: auto;
+  width: 800px;
+  background-image: url(./watch-video-a4e4e0a96b.svg);
+  background-repeat: no-repeat;
+}
+
+.vid {
+  margin-top: 35%;
+  margin-left: 37%;
+  background-color: white;
+}
+
